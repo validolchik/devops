@@ -3,7 +3,6 @@ import datetime
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def moscow_time():
     offset = datetime.timezone(datetime.timedelta(hours=3))

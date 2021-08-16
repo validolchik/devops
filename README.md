@@ -38,31 +38,31 @@
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-[comment]: <> (* [Bootstrap]&#40;https://getbootstrap.com&#41;)
-[comment]: <> (* [JQuery]&#40;https://jquery.com&#41;)
-[comment]: <> (* [Laravel]&#40;https://laravel.com&#41;)
 * Python 3.8.5
 * Flask 1.1.2
 
 
 <!-- GETTING STARTED -->
-## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* Python, pip
+## Prerequisites
+* Python 3.5+
+* pip 21.2.4
+* Flask
   ```sh
   pip install flask
   ```
 
-### Installation
+## Installation
 
+### GitHub
+```sh
+git clone https://github.com/validolchik/devops
+cd app_python
+python -m flask run
+```
+
+### Docker
 
 
 <!-- USAGE EXAMPLES -->
