@@ -41,9 +41,7 @@
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 [comment]: <> (* [Bootstrap]&#40;https://getbootstrap.com&#41;)
-
 [comment]: <> (* [JQuery]&#40;https://jquery.com&#41;)
-
 [comment]: <> (* [Laravel]&#40;https://laravel.com&#41;)
 * Python 3.8.5
 * Flask 1.1.2
@@ -70,8 +68,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
+Using this app you can know current time in Moscow, Russia
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -84,6 +81,11 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+<!-- LINTERS -->
+## Linters
+
+* `flake8-markdown` for `md` files
+* `pylama` for `py` files
 
 <!-- CONTACT -->
 ## Contact
