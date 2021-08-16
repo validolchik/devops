@@ -67,10 +67,14 @@ python -m flask run
 ```
 
 ### Docker
-
+```sh
+docker pull validolchik/devops
+docker run validolchik/devops -p 5000:5000
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Open your browser and type in search bar `localhost:5000` or in command line `curl localhost:5000`
 
 Using this app you can know current time in Moscow, Russia
 
