@@ -30,8 +30,8 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#linters">Linters</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -143,10 +143,6 @@ Project Link: [https://github.com/validolchik/devops](https://github.com/validol
 [comment]: <> (* [JVectorMap]&#40;http://jvectormap.com&#41;)
 
 [comment]: <> (* [Font Awesome]&#40;https://fontawesome.com&#41;)
-
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
