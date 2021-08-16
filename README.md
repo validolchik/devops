@@ -56,7 +56,10 @@
   ```sh
   pip install flask
   ```
-
+  or
+* ```sh
+  pip3 install -r requirements.txt
+  ```
 ## Installation
 
 ### GitHub
@@ -93,7 +96,18 @@ Contributions are what make the open source community such an amazing place to b
 ## Linters
 
 * `flake8-markdown` for `md` files
+  ```sh
+  flake8-markdown *name of md file*.md
+  ```
 * `pylama` for `py` files
+  ```sh
+  pylama app.py
+  ```
+* `hadolint`
+  ```sh
+  docker pull hadolint/hadolint
+  docker run --rm -i hadolint/hadolint < app_python/Dockerfile
+  ```
 
 <!-- CONTACT -->
 ## Contact
