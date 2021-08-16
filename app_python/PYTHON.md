@@ -4,3 +4,5 @@
 
 Basic `Flask` app with imported `datetime` library.
 When app working, it writes current time in Moscow in format `yyyy-mm-dd hh:mm:s+03:00`
+
+[comment]: <> (Why is it cool)
