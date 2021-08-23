@@ -8,3 +8,11 @@ When app working, it writes current time in Moscow in format `yyyy-mm-dd hh:mm:s
 
 # Why these technologies were used
 Pretty simple in implementation without any headache. Also, this small template can be used in future Flask project.
+
+# Best practices implemented
+* requirements.txt - to mantain all needed packages at once
+* using linter
+* readable code writing
+* using virtual environment
+* usage of git
+* using simple packages for app
