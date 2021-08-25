@@ -14,7 +14,7 @@ RUN pip3 install -r requirements.txt --no-cache-dir
 
 RUN pip3 install requests
 
-COPY app.py /app_python
+COPY time_app /app_python
 
 EXPOSE 5000
 

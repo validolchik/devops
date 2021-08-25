@@ -101,7 +101,7 @@ Contributions are what make the open source community such an amazing place to b
   ```
 * `pylama` for `py` files
   ```sh
-  pylama app.py
+  pylama *.py
   ```
 * `hadolint`
   ```sh
