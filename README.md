@@ -29,10 +29,10 @@
       </ul>
     </li>
     <li>
-      <a href="#testing">Unit tests</a>
+      <a href="#unit-tests">Unit tests</a>
       <ul>
         <li><a href="#tests">Tests</a></li>
-        <li><a href="#best_practices">Best practices</a></li>
+        <li><a href="#best-practices">Best practices</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
