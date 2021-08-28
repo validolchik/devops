@@ -119,7 +119,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LINTERS -->
 ## Linters
 
-* `flake8-markdown` for `md` files
+* `flake8-markdown` for python code inside the `md` files
   ```sh
   flake8-markdown *name of md file*.md
   ```
