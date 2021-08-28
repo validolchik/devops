@@ -12,5 +12,6 @@ def test_date():
         sleep(1)
         response = client.get('/')
         assert isinstance(response.data, bytes)
-        response_datetime = datetime.datetime.fromisoformat(response.data.decode('utf-8'))
+        response_datetime = \
+            datetime.datetime.fromisoformat(response.data.decode('utf-8'))
         assert response_datetime > datetime_now
