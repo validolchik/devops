@@ -28,6 +28,13 @@
         </ul>
       </ul>
     </li>
+    <li>
+      <a href="#testing">Unit tests</a>
+      <ul>
+        <li><a href="#tests">Tests</a></li>
+        <li><a href="#best_practices">Best practices</a></li>
+      </ul>
+    </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#linters">Linters</a></li>
@@ -75,6 +82,23 @@ docker pull validolchik/devops
 docker run validolchik/devops -p 5000:5000
 ```
 
+<!-- HOW TO TEST APPLICATION -->
+## Unit tests
+`pytest` was used to unit test the application
+Run `python -m pytest` inside `app_python`
+### Tests
+1. `test_connection` checks whether app is alive and responding successfully to requests
+2. `test_date_correctness` checks that app return correct time for Moscow
+3. `test_factory` checks, whether app factory correctly parses the config file and creates test app when config is given
+### Best practices
+* Each test in separate file
+* Tests are in separate folder
+* Using `pytest` fixtures
+* Each test tests separate thing
+* Did not modify fixture inside another fixture
+* Setup using `setup.py`, which allows installing packages in 'editable' mode
+
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 Open your browser and type in search bar `localhost:5000` or in command line `curl localhost:5000`
@@ -91,8 +115,6 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## Testing
 
 <!-- LINTERS -->
 ## Linters
