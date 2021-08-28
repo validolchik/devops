@@ -10,7 +10,7 @@ USER user
 RUN pip3 install --upgrade pip
 
 COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r app_python/requirements.txt --no-cache-dir
 
 RUN pip3 install requests
 
