@@ -1,3 +1,4 @@
+![Test build push](https://github.com/validolchik/devops/actions/workflows/work.yml/badge.svg)
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
