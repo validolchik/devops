@@ -4,7 +4,7 @@ FROM python:3.8-slim-buster
 LABEL mainrtainer='r.valeev@innopolis.university'
 
 WORKDIR /app_python
-RUN adduser -D user && chown -R user /app_python
+RUN adduser --disabled-password user && chown -R user /app_python
 USER user
 
 RUN pip3 install --upgrade pip
