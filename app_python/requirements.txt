@@ -22,6 +22,7 @@ pyflakes==2.3.1
 pylama==7.7.1
 pyparsing==2.4.7
 pytest==6.2.4
+pyzmq==22.2.1
 scoop==0.7.1.1
 snowballstemmer==2.1.0
 toml==0.10.2
