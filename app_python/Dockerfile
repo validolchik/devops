@@ -12,7 +12,7 @@ RUN pip3 install --upgrade pip
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt --no-cache-dir
 
-RUN pip3 install requests
+RUN pip3 install requests==2.26.0
 
 COPY time_app /app_python
 
