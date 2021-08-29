@@ -7,3 +7,4 @@ instance/
 */.idea/
 */__pycache__/*
 ../.idea/
+.idea/

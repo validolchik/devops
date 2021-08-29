@@ -1,6 +1,4 @@
 name: Test app
-author: "Renat Valeev, r.valeev@innopolis.university"
-description: "Run linters, tests, build and push docker image for Moscow time app"
 
 on: [push]
 
