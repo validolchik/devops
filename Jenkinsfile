@@ -1,48 +1,63 @@
 pipeline {
+    environment {
+        APP_PATH = 'app_python'
+        IMAGE_NAME = 'moscow_time'
+        DOCKER_HUB_USERNAME = 'validolchik'
+    }
+
     agent {
         docker {
             image 'python:3.8-slim-buster'
-            args '-u root'
+            args '-u root -v $HOME/.cache:/root/.cache -v /var/run/docker.sock:/var/run/docker.sock'
         }
     }
 
     stages {
-        stage('checkout') {
-            steps{
-                checkout scm
-            }
-        }
         stage('setup') {
             steps {
-                sh "ls -la"
-                sh"""
-                pip3 install -r app_python/requirements.txt
-                """
+                dir("${APP_PATH}"){
+                    sh"""
+                    pip3 install -r requirements.txt
+                    """
+                }
             }
         }
+
         stage('Linting') {
              steps {
-                 dir('app_python') {
+                 dir("${APP_PATH}") {
                      sh "pylama -i W,E501"
                      sh "flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
                          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics"
                  }
              }
          }
+
         stage('Unit Testing') { // Perform unit testing
-        steps {
-            script {
-                sh """
-                cd app_python
-                python -m pytest
-                """
+            steps {
+                dir("${APP_PATH}"){
+                    sh """
+                    cd app_python
+                    python -m pytest
+                    """
+                }
+                }
+            }
+
+        stage('build') {
+            steps {
+                dir("${APP_PATH}") {
+                    script {
+                        def image = docker.build('$DOCKER_HUB_USERNAME/$IMAGE_NAME:latest', '.')
+                        docker.withRegistry('', 'docker-hub-creds') {
+                            image.push()
+                        }
+                    }
                 }
             }
         }
-        stage('build') {
-            steps {
-                sh 'echo build'
-            }
-        }
+    }
+    post {
+        cleanup { cleanWs() }
     }
 }
