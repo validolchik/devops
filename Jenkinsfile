@@ -18,6 +18,7 @@ pipeline {
                 dir("${APP_PATH}"){
                     sh"""
                     pip3 install -r requirements.txt
+                    apt-get update && apt-get install -y docker.io
                     """
                 }
             }
@@ -55,8 +56,5 @@ pipeline {
                 }
             }
         }
-    }
-    post {
-        cleanup { cleanWs() }
     }
 }
