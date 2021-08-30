@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'python:3.8.5' } }
+    agent { docker { image 'python:3.8-slim-buster' } }
 //     agent {any}
     stages {
         stage('checkout') {
@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh "ls -la"
                 sh"""
-                pip install -r app_python/requirements.txt
+                pip3 install -r app_python/requirements.txt --user
                 """
             }
         }
