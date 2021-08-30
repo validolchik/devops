@@ -37,7 +37,6 @@ pipeline {
             steps {
                 dir("${APP_PATH}"){
                     sh """
-                    cd app_python
                     python -m pytest
                     """
                 }
