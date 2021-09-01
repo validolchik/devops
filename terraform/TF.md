@@ -62,4 +62,4 @@ Tried to deploy VM on VirtualBox, but got error with `Failed to query available 
 
 Instead, used Vagrant to set up local VM (followed [tutorial](https://learn.hashicorp.com/collections/vagrant/getting-started))
 [screen 1](https://github.com/validolchik/devops/blob/master/vagrant/images/scr1.png)
-[screen 2](https://github.com/validolchik/devops/blob/master/vagrant/images/scr1.png)
+[screen 2](https://github.com/validolchik/devops/blob/master/vagrant/images/scr2.png)
