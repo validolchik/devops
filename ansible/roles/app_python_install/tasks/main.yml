@@ -6,6 +6,7 @@
     state: present
 
 - name: Install docker libraries
+  become: true
   pip:
     name:
       - docker==5.0.2
@@ -28,6 +29,7 @@
     mode: u=rw,g=r,o=r
 
 - name: Run docker-compose
+  become: true
   community.docker.docker_compose:
     pull: true
     recreate: always
