@@ -14,9 +14,12 @@ RUN pip3 install -r requirements.txt --no-cache-dir
 
 RUN pip3 install requests==2.26.0
 
-COPY time_app /app_python
+COPY time_app/__init__.py /app_python/time_app/__init__.py
 
 EXPOSE 5000
+
+ENV FLASK_APP=time_app
+ENV FLASK_ENV=development
 
 HEALTHCHECK --interval=20s --timeout=3s \
   CMD python3 -c "import sys; import requests;\

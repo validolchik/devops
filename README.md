@@ -137,6 +137,6 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@validolchik](https://t.me/validolchik) - r.valeev@innopolis.university
+Renat Valeev - [@validolchik](https://t.me/validolchik) - r.valeev@innopolis.university
 
 Project Link: [https://github.com/validolchik/devops](https://github.com/validolchik/devops)
