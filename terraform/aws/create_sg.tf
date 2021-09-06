@@ -18,8 +18,8 @@ resource "aws_security_group" "sg" {
   ingress = [{
     description      = "My public IP"
     protocol         = var.sg_ingress_proto
-    from_port        = var.sg_ingress_ssh
-    to_port          = var.sg_ingress_ssh
+    from_port        = var.sg_ingress_all_start
+    to_port          = var.sg_ingress_all_end
     cidr_blocks = ["0.0.0.0/0"]
     ipv6_cidr_blocks = []
     prefix_list_ids  = []

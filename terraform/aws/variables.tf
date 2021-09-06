@@ -77,6 +77,18 @@ variable "sg_ingress_ssh" {
   default     = "22"
 }
 
+variable "sg_ingress_all_start" {
+  description = "Port used for the ingress rule"
+  type        = string
+  default     = "0"
+}
+
+variable "sg_ingress_all_end" {
+  description = "Port used for the ingress rule"
+  type        = string
+  default     = "65535"
+}
+
 variable "sg_egress_proto" {
   description = "Protocol used for the egress rule"
   type        = string
@@ -87,6 +99,12 @@ variable "sg_egress_all" {
   description = "Port used for the egress rule"
   type        = string
   default     = "0"
+}
+
+variable "sg_egress_all_end" {
+  description = "Port used for the egress rule"
+  type        = string
+  default     = "65535"
 }
 
 variable "sg_egress_cidr_block" {
