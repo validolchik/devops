@@ -44,6 +44,13 @@ Read more [here](https://grafana.com/docs/grafana/latest/best-practices/)
 
     The visualizations can be misleading, and hide important data. Recommended turning it off in most cases.
 
+## Metrics
+
+### Working dashboards
+![dash1](./screenshots/loki_global_metrics.png)
+![dash2](./screenshots/prom_2_0_overview.png)
+### Services' logs
+![services](./screenshots/added_logs_to_all_services.png)
 
 ## P.S.
 
