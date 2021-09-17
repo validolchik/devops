@@ -56,3 +56,7 @@ Read more [here](https://grafana.com/docs/grafana/latest/best-practices/)
 
 All commented lines in [docker-compose](docker-compose.yml) 
 will be included, when appropriate technology will be needed
+
+## TODO
+
+yml config cheetsheet to create template for logging
