@@ -11,3 +11,9 @@ the `minikube tunnel` should be executed
 ## Deployment using manifests
 
 ![manifests](./screenshots/deployment_service.png)
+
+## Helm
+
+![pods services](./screenshots/helm_podsservices.png)
+
+![dashboard](./screenshots/helm_dashboard.png)
