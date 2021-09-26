@@ -17,3 +17,7 @@ the `minikube tunnel` should be executed
 ![pods services](./screenshots/helm_podsservices.png)
 
 ![dashboard](./screenshots/helm_dashboard.png)
+
+ kubectl create secret generic some-random-pass --from-file=./username.txt --from-file=./password.txt
+secret/some-random-pass created
+
