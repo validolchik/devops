@@ -55,6 +55,14 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            - name: config
+              mountPath: {{ .Values.configPath }}
+              readOnly: {{ .Values.readOnlyConfig }}
+      volumes:
+        - name: config
+          configMap:
+            name: {{ include "time-app.fullname" . }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

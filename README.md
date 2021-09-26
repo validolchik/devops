@@ -104,6 +104,8 @@ Run `python -m pytest` inside `app_python`
 ## Usage
 Open your browser and type in search bar `localhost:5000` or in command line `curl localhost:5000`
 
+To get main page visit timestamps, enter `localhost:5000/visits` 
+
 Using this app you can know current time in Moscow, Russia
 
 <!-- CONTRIBUTING -->

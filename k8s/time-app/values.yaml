@@ -7,6 +7,9 @@ periodSeconds: 3
 
 replicaCount: 3
 
+configPath: "/etc/config"
+readOnlyConfig: true
+
 image:
   repository: validolchik/moscow_time
   pullPolicy: IfNotPresent

@@ -25,12 +25,29 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    if not os.path.exists("media/visits.txt"):
+        os.makedirs("media/")
+        f = open("media/visits.txt", 'x')
+        f.close()
+
     @app.route('/')
     def moscow_time():
         """
             Generate index page
             returns current time in moscow
         """
-        return str(datetime.datetime.now(offset))
+        time_str = str(datetime.datetime.now(offset))
+        with open("media/visits.txt", "a") as f:
+            f.write(time_str + "\n")
+        return time_str
+
+    @app.route('/visits')
+    def print_visits():
+        """
+            Outputs all visits
+        """
+        with open("media/visits.txt") as f:
+            visits = f.read()
+        return visits
 
     return app

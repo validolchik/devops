@@ -4,3 +4,5 @@ services:
     image: validolchik/moscow_time:${TAG:-latest}
     ports:
       - "5000:5000"
+    volumes:
+      - ./media:/home/time_app/media
