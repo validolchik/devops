@@ -10,6 +10,7 @@ replicaCount: 3
 visitsPath: "media/"
 configPath: "/etc/config"
 readOnlyConfig: true
+downloadsFolder: "/downloads"
 
 image:
   repository: validolchik/moscow_time
