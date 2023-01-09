@@ -4,7 +4,8 @@ venv/
 instance/
 .coverage
 *.egg-info/
-*/.idea/
+*.idea/
 */__pycache__/*
 .env
 media/
+terraform/yandex_cloud/.terraform/
