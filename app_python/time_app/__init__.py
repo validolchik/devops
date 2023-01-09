@@ -1,7 +1,7 @@
 """
     An app that displays current time in Moscow on main page
 """
-from flask import Flask
+from flask import Flask, render_template
 import datetime
 import os
 
@@ -36,10 +36,10 @@ def create_app(test_config=None):
             Generate index page
             returns current time in moscow
         """
-        time_str = str(datetime.datetime.now(offset))
+        time_now = datetime.datetime.now(offset).strftime("%Y-%m-%d %H:%M:%S")
         with open("media/visits.txt", "a") as f:
-            f.write(time_str + "\n")
-        return time_str
+            f.write(str(time_now) + "\n")
+        return render_template('main.html', utc_dt=time_now)
 
     @app.route('/visits')
     def print_visits():
@@ -47,7 +47,7 @@ def create_app(test_config=None):
             Outputs all visits
         """
         with open("media/visits.txt") as f:
-            visits = f.read()
-        return visits
+            visits = f.readlines()
+        return "<br>".join(visits)
 
     return app

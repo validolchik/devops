@@ -15,6 +15,7 @@ RUN pip3 install -r requirements.txt --no-cache-dir
 RUN pip3 install requests==2.26.0
 
 COPY time_app/__init__.py /app_python/time_app/__init__.py
+COPY time_app/templates /app_python/time_app/templates/
 
 EXPOSE 5000
 

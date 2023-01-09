@@ -6,5 +6,5 @@ instance/
 *.egg-info/
 */.idea/
 */__pycache__/*
-../.idea/
-.idea/
+.env
+media/
