@@ -1,8 +1,8 @@
 ---
-- hosts: all
+- hosts: app_server
   become: true
   vars:
-    username: ubuntu
+    username: ansible_worker
 
   roles:
     - role: docker_install

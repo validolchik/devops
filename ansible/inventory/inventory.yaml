@@ -1,0 +1,6 @@
+virtualmachines:
+  hosts:
+    app_server:
+      ansible_host: 84.201.163.104
+  vars:
+    ansible_user: ansible_worker

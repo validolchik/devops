@@ -9,7 +9,8 @@ def test_date():
 
     with app.test_client() as client:
         moscow_timezone = datetime.timezone(datetime.timedelta(hours=3))
-        datetime_now = datetime.datetime.now(moscow_timezone).replace(tzinfo=None)
+        datetime_now = datetime.datetime.\
+            now(moscow_timezone).replace(tzinfo=None)
         sleep(1)
         response = client.get('/')
         bsh = BeautifulSoup(response.data, 'html.parser')

@@ -1,8 +1,8 @@
 ---
-- hosts: all
-#  remote_user: ubuntu
+- hosts: app_server
+  remote_user: ansible_worker
   vars:
-    username: ubuntu
+    username: ansible_worker
     docker_hub_app_tag: latest
 
   roles:
